@@ -17,4 +17,9 @@ public class ExpirableShippableProduct extends ExpirableProduct implements Shipp
     public double getShippingWeight() {
         return weight;
     }
+
+    @Override
+    public boolean isExpired() {
+        return true;
+    }
 }
